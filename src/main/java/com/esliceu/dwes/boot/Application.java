@@ -41,11 +41,11 @@ public class Application {
             Tipus tipus2 = new Tipus(Nom.ENTRADA);
             tipusRepo.save(tipus2);
 
-            Fitxatge f1 = new Fitxatge(new Date(), tipus1);
+            Fitxatge f1 = new Fitxatge(1489433626,tipus1);
             f1.setTipusFitxatge(tipus1);
             f1.setTipusFitxatge(tipus2);
 
-            Fitxatge f2 = new Fitxatge(new Date(), tipus2);
+            Fitxatge f2 = new Fitxatge(1489433626, tipus2);
             f2.setTipusFitxatge(tipus1);
             f2.setTipusFitxatge(tipus2);
 

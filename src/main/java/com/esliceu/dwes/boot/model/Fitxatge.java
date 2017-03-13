@@ -12,7 +12,7 @@ public class Fitxatge implements Serializable {
     @Id
     @GeneratedValue
     private int id;
-    private Date diaHora;
+    private long diaHora;
 
 
     @ManyToOne(fetch = FetchType.EAGER)
@@ -22,7 +22,7 @@ public class Fitxatge implements Serializable {
         return id;
     }
 
-    public Fitxatge(Date diaHora, Tipus tipusFitxatge) {
+    public Fitxatge(long diaHora, Tipus tipusFitxatge) {
         this.diaHora = diaHora;
         this.tipusFitxatge = tipusFitxatge;
     }
@@ -33,11 +33,11 @@ public class Fitxatge implements Serializable {
         this.id = id;
     }
 
-    public Date getDiaHora() {
+    public long getDiaHora() {
         return diaHora;
     }
 
-    public void setDiaHora(Date diaHora) {
+    public void setDiaHora(long diaHora) {
         this.diaHora = diaHora;
     }
 

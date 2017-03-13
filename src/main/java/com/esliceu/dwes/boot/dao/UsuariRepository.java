@@ -12,6 +12,7 @@ import java.util.List;
  */
 public interface UsuariRepository extends CrudRepository<Usuari,String> {
     List<Usuari> findByNomAndCognom(List<String> users, Long from, Long to);
+    Usuari findByUsuari(String u);
 
 
 }
