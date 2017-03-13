@@ -18,9 +18,6 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-/**
- * Created by xavi on 23/02/17.
- */
 @SpringBootApplication
 public class Application {
 
@@ -66,6 +63,8 @@ public class Application {
             Usuari u2 = (new Usuari("jbauer","Jack", "Bauer","1234"));
             u2.setFitxatges(lf2);
             repo.save(u2);
+
+
 
 //            Usuari u3 = (new Usuari("Chloe", "O'Brian","1234"));
 //            u3.setFitxatges(lf);
