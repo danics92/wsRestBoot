@@ -12,16 +12,10 @@ public class Usuari implements Serializable {
 
     public Usuari(){}
 
-    public Usuari(String nombre, String cognom) {
-        this.nom = nombre;
-        this.cognom = cognom;
-    }
-
-    public Usuari(String usuari, String nom, String cognom, String contrasenya) {
+    public Usuari(String usuari, String nom, String cognom) {
         this.usuari = usuari;
         this.nom = nom;
         this.cognom = cognom;
-        this.contrasenya = contrasenya;
     }
 
     @Id

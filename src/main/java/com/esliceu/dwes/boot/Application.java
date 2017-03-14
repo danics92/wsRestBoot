@@ -56,11 +56,11 @@ public class Application {
             lf2.add(f2);
 
 
-            Usuari u1 = (new Usuari("xcambil","Xisco", "cambil","1234"));
+            Usuari u1 = (new Usuari("xcambil","Xisco", "cambil"));
             u1.setFitxatges(lf);
             repo.save(u1);
 
-            Usuari u2 = (new Usuari("jbauer","Jack", "Bauer","1234"));
+            Usuari u2 = (new Usuari("jbauer","Jack", "Bauer"));
             u2.setFitxatges(lf2);
             repo.save(u2);
 

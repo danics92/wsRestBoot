@@ -54,7 +54,7 @@ public class UserController {
                 usuariActual.setUsuari(users.get(i));
                 usuarioConsulta =  usuariRepository.findByUsuari(usuariActual.getUsuari());
                 System.out.println(usuarioConsulta.toString());
-                userReturn =  new Usuari(usuarioConsulta.getNom(),usuarioConsulta.getCognom());
+                userReturn =  new Usuari(usuarioConsulta.getUsuari(),usuarioConsulta.getNom(),usuarioConsulta.getCognom());
                 for (int j = 0; j < usuarioConsulta.getFitxatges().size(); j++) {
                     if(usuarioConsulta.getFitxatges().get(j).getDiaHora() >= from
                             && usuarioConsulta.getFitxatges().get(j).getDiaHora() <= to){
@@ -71,7 +71,7 @@ public class UserController {
 
             for (int i = 0; i < lu.size(); i++){
                 usuarioConsulta =  usuariRepository.findByUsuari(lu.get(i).getUsuari());
-                userReturn =  new Usuari(usuarioConsulta.getNom(),usuarioConsulta.getCognom());
+                userReturn =  new Usuari(usuarioConsulta.getUsuari(),usuarioConsulta.getNom(),usuarioConsulta.getCognom());
                 for (int j = 0; j < usuarioConsulta.getFitxatges().size(); j++) {
                     if(usuarioConsulta.getFitxatges().get(j).getDiaHora() >= from
                             && usuarioConsulta.getFitxatges().get(j).getDiaHora() <= to){
