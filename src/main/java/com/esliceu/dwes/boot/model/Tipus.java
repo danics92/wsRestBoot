@@ -12,6 +12,14 @@ public class Tipus implements Serializable {
     @GeneratedValue
     private int id;
 
+    public Nom getNom() {
+        return nom;
+    }
+
+    public void setNom(Nom nom) {
+        this.nom = nom;
+    }
+
     @Enumerated(EnumType.STRING)
     private Nom nom;
 
@@ -26,13 +34,6 @@ public class Tipus implements Serializable {
         this.id = id;
     }
 
-    public Nom getNom() {
-        return nom;
-    }
-
-    public void setNom(Nom nom) {
-        this.nom = nom;
-    }
 
     public Tipus(){}
 

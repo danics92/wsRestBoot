@@ -34,6 +34,7 @@ public class Usuari implements Serializable {
     private String contrasenya;
 
     @OneToMany
+    @OrderBy("diaHora DESC")
     private List<Fitxatge> fitxatges;
 
 

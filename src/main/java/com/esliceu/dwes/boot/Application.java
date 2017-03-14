@@ -35,7 +35,7 @@ public class Application {
             Tipus tipus1 = new Tipus(Nom.ENTRADA);
             tipusRepo.save(tipus1);
 
-            Tipus tipus2 = new Tipus(Nom.ENTRADA);
+            Tipus tipus2 = new Tipus(Nom.SORTIDA);
             tipusRepo.save(tipus2);
 
             Fitxatge f1 = new Fitxatge(1489433626,tipus1);
@@ -64,23 +64,6 @@ public class Application {
             u2.setFitxatges(lf2);
             repo.save(u2);
 
-
-
-//            Usuari u3 = (new Usuari("Chloe", "O'Brian","1234"));
-//            u3.setFitxatges(lf);
-//            repo.save(u3);
-//
-//            Usuari u4 = (new Usuari("Kim", "Bauer","1234"));
-//            u4.setFitxatges(lf);
-//            repo.save(u4);
-//
-//            Usuari u5 = (new Usuari("David", "Palmer","1234"));
-//            u5.setFitxatges(lf);
-//            repo.save(u5);
-//
-//            Usuari u6 = (new Usuari("Michelle", "Dessler","1234"));
-//            u6.setFitxatges(lf);
-//            repo.save(u6);
         };
 
     }
